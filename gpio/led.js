@@ -1,16 +1,11 @@
 var Gpio = require("onoff").Gpio;
 
-var led = new Gpio(11, 'out');
+var pin = 17;// GPIO17
+var led = new Gpio(pin, 'out');
 
 
-
-setTimeout(function(){
-	led.writeSync(1);
-	setTimeout(function(){
-		led.write(0, function(er, val){
-			console.log(er, val);
-			led.unexport();
-		});
-	}, 10000);
-}, 10000);
-
+var value = false;
+setInterval(function(){
+	led.writeSync(value ? 0 : 1);
+	value = !value;
+}, 500);
