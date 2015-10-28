@@ -11,6 +11,6 @@ setTimeout(function(){
 			console.log(er, val);
 			led.unexport();
 		});
-	});
+	}, 10000);
 }, 10000);
 
