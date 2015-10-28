@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pi-gpio": "0.0.8",
+    "onoff": "^1.0.3",
     "raspicam": "^0.2.13"
   }
 }
