@@ -1,6 +1,6 @@
 var Gpio = require("onoff").Gpio;
 
-var buttonPin = 18;
+var buttonPin = 4;
 var button = new Gpio(buttonPin, 'in', 'both');
 var ledPin = 17;// GPIO17
 var led = new Gpio(ledPin, 'out');

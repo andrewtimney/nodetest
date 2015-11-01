@@ -10,7 +10,7 @@ var interval = setInterval(function(){
 }, 500);
 
 function exit() {
-	clearInterval(interval);
+  clearInterval(interval);
   led.unexport();
   process.exit();
 }
