@@ -7,7 +7,7 @@ var led = new Gpio(ledPin, 'out');
 
 button.watch(function(er, value){
 	console.log('button changed', value);
-	led.writeSynce(value);
+	led.writeSync(value);
 });
 
 function exit() {
